@@ -8,20 +8,26 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: Colors.blueGrey,
+      backgroundColor: Color(0xff2D4059),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(40),
           bottomRight: Radius.circular(40),
         ),
       ),
-      title: Center(
-        child: Image.asset(
-          'asset/home logo.png', // Replace with your image path
-          width: 90,
-          height: 100,
+      title: Row(mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          const Center(
+              child: Text("Akhbar Elyoum Academy",style: TextStyle(fontSize: 17),)
+          ),
+          SizedBox(width:22),
+          Image.asset(
+            'asset/home logo.png', // Replace with your image path
+            width: 75,
+            height: 85,
+          ),
 
-        ),
+        ],
       ),
     );
   }
