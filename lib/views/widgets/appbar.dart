@@ -9,13 +9,16 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: Color(0xff2D4059),
+      automaticallyImplyLeading: false,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(40),
           bottomRight: Radius.circular(40),
         ),
       ),
-      title: Row(mainAxisAlignment: MainAxisAlignment.end,
+      title:
+
+      Row(mainAxisAlignment: MainAxisAlignment.end,
         children: [
           const Center(
               child: Text("Akhbar Elyoum Academy",style: TextStyle(fontSize: 17),)
