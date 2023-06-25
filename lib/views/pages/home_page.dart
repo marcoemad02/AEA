@@ -16,7 +16,13 @@ class homePage extends StatelessWidget {
         child: Column(
           children: [
             MyAppBar(),
-            SizedBox(height: 20,),
+            const SizedBox(height: 20,),
+            Row(
+              children: const [
+                SizedBox(width: 28,),
+                Text("Akhbar Elyoum Academy",style:TextStyle(fontFamily: 'PathwayExtreme',color: Colors.black,fontSize:22),),
+              ],
+            ),
             Container(
                 height:420,
                 child: SliderP()),
